@@ -6,16 +6,11 @@
 // }
 
 #include <iostream>
+#define PI 3.14
 using namespace std;
 int main() {
-
-int a,b,c = a + b;
-cout << "Enter first number: ";
-cin >> a;
-cout << "Enter second number: ";
-cin >> b;
-c = a + b;
-cout << "The sum of " << a << " and " << b << " is: " << c << endl;
-return 0;
-
+    int age=7897585;
+    cout << "Value of PI: " << PI << endl;
+    cout << "Age: " << age << endl;
+    return 0;
 }
