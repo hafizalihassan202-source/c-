@@ -6,12 +6,12 @@
 // }
 
 // #include <iostream>
-// #define PI 3.14
+// // #define PI 3.14
 // using namespace std;
 // int main() {
-//     int age=7897585;
-//     cout << "Value of PI: " << PI << endl;
-//     cout << "Age: " << age << endl;
+//     int age=20;
+//     // cout << "Value of PI: " << PI << endl;
+//     cout << " Your Age is: " << age << endl;
 //     return 0;
 // }
 
@@ -19,13 +19,15 @@
 using namespace std;
 int main()
 {
-    int age = 19;
+    unsigned int a= 19;
+    int age= 19;
     float height = 5.12f;
-    double fee = 14000.50;
+    double fee = 14.005656;
     char grade = 'A';
     bool Isstudent = true;
     string name = "Ali HAssan";
     int marks_total=882;
+    cout << "Unsigned Integer: " << a << endl;
     cout << "Age: " << age << endl;
     cout << "Height: " << height << endl;
     cout << "Fee: " << fee << endl;
@@ -33,5 +35,17 @@ int main()
     cout << "Is Student: " << Isstudent << endl;
     cout << "Name: " << name << endl;
     cout << "Total Marks: " << marks_total << endl;
+    cout << "Size of age: " << sizeof(age) << " bytes" << endl;
     return 0;
 }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int age;
+//     cout << "Enter your age: ";
+//     cin >> age;
+//     cout << "You entered: " << age << endl;
+//     return 0;
+// }
