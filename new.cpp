@@ -55,10 +55,17 @@ using namespace std;
 int main()
 {
     int a=5,b=200;
-    float percentage;
-    percentage= a/b*100;
-    // percentage= a*100.0/b;
-    cout << "Percentage: " << percentage << "%" << endl;
+    float percentage= a*100.0/b;  // correct way to calculate percentage
+    auto wrong_percentage= a/b*100;   // wrong way to calculate percentage
+    cout << " Right Percentage: " << percentage << "%" << endl;
+    cout << " Wrong Percentage : " << wrong_percentage << "%" << endl;
     return 0;
 
 }
+
+
+
+
+
+
+
