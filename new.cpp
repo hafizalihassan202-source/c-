@@ -50,19 +50,40 @@
 //     return 0;
 // } 
 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int a=5,b=200;
+//     float percentage= a*100.0/b;  // correct way to calculate percentage
+//     auto wrong_percentage= a/b*100;   // wrong way to calculate percentage
+//     cout << " Right Percentage: " << percentage << "%" << endl;
+//     cout << " Wrong Percentage : " << wrong_percentage << "%" << endl;
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
 int main()
 {
-    int a=5,b=200;
-    float percentage= a*100.0/b;  // correct way to calculate percentage
-    auto wrong_percentage= a/b*100;   // wrong way to calculate percentage
-    cout << " Right Percentage: " << percentage << "%" << endl;
-    cout << " Wrong Percentage : " << wrong_percentage << "%" << endl;
-    return 0;
+    float Eng,Math,Obt;
+    float percentage=0;
+    auto total= 200;
 
-    
+    // cout << "Enter marks of English: ";
+    // cin >> Eng;
+    // cout << "Enter marks of Math: ";
+    // cin >> Math;
+
+    cout << "Enter marks of English and Math: ";
+    cin >> Eng >> Math;
+    Obt = Eng + Math;
+    percentage = Obt * 100.0 / total;
+    cout << "Total Marks Obtained: " << Obt << endl;
+    cout << "Percentage: " << percentage << "%" << endl;
+    return 0;
 }
+
 
 
 
